@@ -25,7 +25,7 @@ const PostDetails = () => {
                 const postResponse = await axios.get(`https://blog3-backend.onrender.com/posts/${postID}`, config);
                 setPost(postResponse.data);
 
-                const commentsResponse = await axios.get(`https://blog3-backend.onrender.com//posts/${postID}/comments`, config);
+                const commentsResponse = await axios.get(`https://blog3-backend.onrender.com/posts/${postID}/comments`, config);
                 setComments(commentsResponse.data);
             } catch (error) {
                 console.error('Error fetching post:', error);
@@ -40,7 +40,7 @@ const PostDetails = () => {
         try {
             const token = localStorage.getItem('authToken');
             const response = await axios.post(
-                `https://blog3-backend.onrender.com//posts/${postID}/add-comment`,
+                `https://blog3-backend.onrender.com/posts/${postID}/add-comment`,
                 { message: newComment },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -59,7 +59,7 @@ const PostDetails = () => {
 
         try {
             const token = localStorage.getItem('authToken');
-            await axios.delete(`https://blog3-backend.onrender.com//posts/${postID}/${commentID}/delete-comment`, {
+            await axios.delete(`https://blog3-backend.onrender.com/posts/${postID}/${commentID}/delete-comment`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setComments(comments.filter((comment) => comment._id !== commentID));
@@ -78,7 +78,7 @@ const PostDetails = () => {
 
     try {
         const token = localStorage.getItem('authToken');
-        await axios.patch(`https://blog3-backend.onrender.com//posts/${postID}/${editCommentId}/edit-comment`,
+        await axios.patch(`https://blog3-backend.onrender.com/posts/${postID}/${editCommentId}/edit-comment`,
             { message: editedComment },
             { headers: { Authorization: `Bearer ${token}` } }
         );
