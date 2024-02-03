@@ -13,7 +13,7 @@ const CreatePost = () => {
 
         try {
             const token = localStorage.getItem('authToken');
-            await axios.post('https://blog-backend2-m3a3.onrender.com//posts/create-post', 
+            await axios.post('https://blog3-backend.onrender.com/posts/create-post', 
                 { title, content },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://blog-backend2-m3a3.onrender.com//users/login', { username, password });
+            const response = await axios.post('https://blog3-backend.onrender.com/users/login', { username, password });
             localStorage.setItem('authToken', response.data.token);
             localStorage.setItem('isAdmin', response.data.isAdmin);
             login(response.data.token, response.data.isAdmin);

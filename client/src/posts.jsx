@@ -17,7 +17,7 @@ const Post = () => {
         const fetchPosts = async () => {
             try {
                 const token = localStorage.getItem('authToken');
-                const response = await axios.get('https://blog-backend2-m3a3.onrender.com//posts', {
+                const response = await axios.get('https://blog3-backend.onrender.com/posts', {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setPosts(response.data);
@@ -39,7 +39,7 @@ const Post = () => {
 
         try {
             const token = localStorage.getItem('authToken');
-            const response = await axios.delete(`https://blog-backend2-m3a3.onrender.com//posts/delete-post/${postID}`, {
+            const response = await axios.delete(`https://blog3-backend.onrender.com//posts/delete-post/${postID}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             if (response.status === 200) {

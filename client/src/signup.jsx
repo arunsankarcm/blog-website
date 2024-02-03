@@ -18,7 +18,7 @@ const Signup = () => {
         }
 
         try {
-            const response = await axios.post('https://blog-backend2-m3a3.onrender.com//users/signup', { username, password });
+            const response = await axios.post('https://blog3-backend.onrender.com/users/signup', { username, password });
             navigate('/');
         } catch (error) {
             if (error.response && error.response.status === 400) {
