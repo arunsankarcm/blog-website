@@ -1,0 +1,45 @@
+.create-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #2b2e2e, #000000);
+    color: #fff;
+}
+
+.create-post-form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-post-form label {
+    color: #ffa500;
+}
+
+.create-post-form input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 97%;
+}
+
+.create-post-form button {
+    background-color: #ffa500;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.create-post-form textarea{
+    padding: 10px;
+    border-radius: 5px;
+    width: 97%;
+    height: 150px;
+}

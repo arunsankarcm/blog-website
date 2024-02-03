@@ -1,0 +1,72 @@
+.post-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #2b2e2e, #000000);
+    color: #fff;
+}
+
+.post-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+}
+
+.comments-section {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.comment {
+    padding: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #fff;
+        position: relative;
+}
+
+.add-comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-comment-form input,
+.add-comment-form button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.add-comment-form button {
+    background-color: #ffa500;
+    color: black;
+    cursor: pointer;
+}
+
+.add-comment-form button:hover {
+    background-color: #e69500;
+}
+
+.comment-actions {
+    position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        gap: 8px;/
+}
+
+.comment-actions .fa-edit,
+.comment-actions .fa-trash-alt {
+    margin-left: 10px;
+}

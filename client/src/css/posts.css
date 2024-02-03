@@ -1,0 +1,49 @@
+.posts-grid {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.post-card {
+    background: #333;
+    color: #ffa500;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card h2 {
+    font-size: 1.5em;
+    color: #ffa500;
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.post {
+    position: relative;
+}
+
+.delete-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
