@@ -39,7 +39,7 @@ const Post = () => {
 
         try {
             const token = localStorage.getItem('authToken');
-            const response = await axios.delete(`https://blog3-backend.onrender.com//posts/delete-post/${postID}`, {
+            const response = await axios.delete(`https://blog3-backend.onrender.com/posts/delete-post/${postID}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             if (response.status === 200) {
