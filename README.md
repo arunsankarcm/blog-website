@@ -3,7 +3,8 @@
 
 A basic CRUD Web application where we can sign up and create blog posts. We can also read and comment on posts made by other users. 
 
-
+## Live preview
+https://blog3-woad.vercel.app/
 
 ## Tech Stack
 
